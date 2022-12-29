@@ -1,0 +1,97 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    width: 450px;
+    border-radius: 20px;
+    margin: 150px auto;
+    background-color: grey;
+    padding: 15px;
+    color: white;
+}
+.card-img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+.btn{
+    padding: 16px 25px;
+    font-weight: bolder;
+    background-color: coral;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.card:hover{
+    animation-name: rotating-card;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes rotating-card{
+    to{
+        /* transform: rotate(360deg); */
+        /* width: 300px; */
+        box-shadow: 0px 0px 20px 15px black;
+        /* margin-left:50%; */
+    }
+}
+.btn{
+    animation-name: bg-animation;
+    animation-duration:4s;
+    animation-fill-mode: forwards;
+}
+@keyframes bg-animation{
+    /* to{
+        background-color:black;
+        color: white;
+    } */
+
+    10%{
+        background-color: blue;
+        color: white;
+    }
+    20%{
+        background-color:coral;
+        color: white;
+    }
+    30%{
+        background-color: black;
+        color: white;
+    }
+    40%{
+        background-color: rgb(0, 77, 128);
+        color: white;
+    }
+    50%{
+        background-color:tomato;
+        color: white;
+    }
+    60%{
+        background-color: rgb(0, 128, 64);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.demo{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(63, 60, 60);
+    box-shadow: 0px 0px 20px 15px black;
+    border-radius: 50%;
+    animation-name: moving-circle;
+    animation-duration:1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes moving-circle{
+    to{
+        margin-top: 400px;
+    }
+}
+
